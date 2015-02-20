@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src='js/jquery-1.11.2.js'></script>
-  <script src='js/scripts.js'></script>
-  <title>Pizza Place</title>
-</head>
-<h1>Test</h1>
-<body>
-</html
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Place</title>
+  </head>
+  <body>
+    <h2>Choose your size, Small, Medium, Large</h2>
+    <form id='new-pizza'>
+      <div class="container">
+        <div class="form-group">
+          <label for="pizzaSize">Enter Size</label>
+          <input type="text" class="form-control" id="pizzaSize" placeholder="Small, medium, or large">
+        </div>
+        <div class="form-group">
+          <label for="pizzaTopping">Enter what toppings you would like</label>
+          <input type="text" class="form-control" id="pizzaTopping" placeholder="Cheese or Pepperoni">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-large btn-primary">Click to order</button>
+    </form>
+    <br>
+    <br>
+    <form id="reset">
+      <a href="javascript:location.reload(true)"><button id="reset-btn" class="btn btn-large btn-warning">Refresh</button></a>
+    </form>
+  </body>
+</html>
