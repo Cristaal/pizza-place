@@ -14,17 +14,11 @@ describe("PizzaPlace", function() {
     });
   });
   describe("pizzaSlice", function() {
-    it("will return the number of slices for a large pizza", function() {
+    it("will add two slices if the pizza has pepperoni", function() {
       var testPizzaPlace = Object.create(PizzaPlace);
-      testPizzaPlace.pizzaSize = 20;
+      testPizzaPlace.pizzaSize = 16;
+      testPizzaPlace.pizzaToppings = "pepperoni";
       expect(testPizzaPlace.pizzaSlice()).to.equal(10);
-    });
-  });
-  describe("withPepperoni", function() {
-    it("will returm true if the pizza has pepperoni", function() {
-      var testPizzaPlace = Object.create(PizzaPlace);
-      testPizzaPlace.pizzaTopping = "pepperoni";
-      expect(testPizzaPlace.withPepperoni()).to.equal(true);
     });
   });
 });
